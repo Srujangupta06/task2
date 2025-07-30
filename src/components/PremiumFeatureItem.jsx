@@ -2,7 +2,8 @@ import { IoIosInfinite } from "react-icons/io"
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdRocket } from "react-icons/io";
 import {  MdStarBorder } from "react-icons/md";
-const PremiumFeatureItem = ({ headline, description, iconName }) => {
+const PremiumFeatureItem = ({featureInfo}) => {
+    const { headline, description, iconName } = featureInfo;
     return (
         <li className="w-full sm:w-[48%] md:w-[31%]  flex flex-col items-center p-4 gap-y-4 my-4 bg-white border-[0.5px] border-[#edc6ab] rounded-lg min-h-[200px] hover:shadow-md hover:cursor-pointer transition-shadow">
             <div className="bg-[#ffedd4] p-2 rounded-md">

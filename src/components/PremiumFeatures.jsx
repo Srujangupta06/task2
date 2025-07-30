@@ -13,7 +13,7 @@ const PremiumFeatures = () => {
             <ul className="flex flex-col items-center md:flex-row md:flex-wrap lg:flex-nowrap md:justify-center w-full gap-x-20 md:my-8 ">
                 {
                     premiumFeatures.map((eachFeature) => (
-                        <PremiumFeatureItem headline={eachFeature.feature} description={eachFeature.description} iconName={eachFeature.iconName} key={eachFeature.id}/>
+                        <PremiumFeatureItem featureInfo={eachFeature} key={eachFeature.id}/>
                     ))
                 }
             </ul>
