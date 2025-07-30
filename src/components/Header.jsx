@@ -14,13 +14,14 @@ const Header = () => {
   return (
     <header className="relative bg-amber-50 w-full flex items-center justify-between px-[5%] md:px-[2%] lg:px-[15%] py-4 md:py-2">
       {/* Left Section for Logo */}
-      <img src={APP_LOGO} alt="logo" className="h-10 sm:h-12" />
+      <Link to='/'>
+        <img src={APP_LOGO} alt="logo" className="h-10 sm:h-12 cursor-pointer" /></Link>
 
       {/* Middle Section for Desktop Nav Menu */}
       <ul className="md:flex md:items-center md:gap-x-8 hidden">
         {navMenuList.map((eachItem) => (
           <Link key={eachItem.id} className="text-black" to={eachItem.route}>
-            <li  className="hover:text-amber-500 cursor-pointer text-md whitespace-nowrap">
+            <li className="hover:text-amber-500 cursor-pointer text-md whitespace-nowrap">
               {eachItem.menu}
             </li>
           </Link>
