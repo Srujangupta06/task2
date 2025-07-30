@@ -2,6 +2,7 @@ import { useState } from "react";
 import { APP_LOGO, navMenuList } from "../utils/constants";
 import Button from "./Button";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,11 @@ const Header = () => {
       {/* Middle Section for Desktop Nav Menu */}
       <ul className="md:flex md:items-center md:gap-x-8 hidden">
         {navMenuList.map((eachItem) => (
-          <li key={eachItem.id} className="hover:text-amber-500 cursor-pointer text-sm whitespace-nowrap">
-            {eachItem.menu}
-          </li>
+          <Link key={eachItem.id} className="text-black" to={eachItem.route}>
+            <li  className="hover:text-amber-500 cursor-pointer text-sm whitespace-nowrap">
+              {eachItem.menu}
+            </li>
+          </Link>
         ))}
       </ul>
 

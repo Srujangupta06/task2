@@ -5,23 +5,28 @@ export const HERO_BANNER_IMAGE = "https://res.cloudinary.com/djv3sgbxn/image/upl
 export const navMenuList = [
     {
         id: 1,
-        menu: 'Home'
+        menu: 'Home',
+        route: '/'
     },
     {
         id: 2,
-        menu: 'Find Jobs'
+        menu: 'Find Jobs',
+        route: '/jobs'
     },
     {
         id: 3,
-        menu: 'Companies'
+        menu: 'Companies',
+        route: '/companies'
     },
     {
         id: 4,
-        menu: 'Find Candidates'
+        menu: 'Find Candidates',
+        route: '/candidates'
     },
     {
         id: 5,
-        menu: 'Dashboard'
+        menu: 'Dashboard',
+        route: '/dashboard'
     }
 ]
 
@@ -212,47 +217,47 @@ export const CategoryList = [
 
 
 export const footerEmployerLinks = [
-  {
-    id: 1,
-    name: 'Post a Job',
-  },
-  {
-    id: 2,
-    name: 'Browse Candidates',
-  },
-  {
-    id: 3,
-    name: 'Pricing Plans',
-  },
-  {
-    id: 4,
-    name: 'Employer Dashboard',
-  },
-  {
-    id: 5,
-    name: 'Support',
-  },
+    {
+        id: 1,
+        name: 'Post a Job',
+    },
+    {
+        id: 2,
+        name: 'Browse Candidates',
+    },
+    {
+        id: 3,
+        name: 'Pricing Plans',
+    },
+    {
+        id: 4,
+        name: 'Employer Dashboard',
+    },
+    {
+        id: 5,
+        name: 'Support',
+    },
 ];
 
 export const footerJobSeerkerLinks = [
-  {
-    id: 1,
-    name: 'Browse Jobs',
-  },
-  {
-    id: 2,
-    name: 'Browse Companies',
-  },
-  {
-    id: 3,
-    name: 'My Dashboard',
-  },
-  {
-    id: 4,
-    name: 'My Profile',
-  },
-  {
-    id: 5,
-    name: 'Resume Builder',
-  },
+    {
+        id: 1,
+        name: 'Browse Jobs',
+    },
+    {
+        id: 2,
+        name: 'Browse Companies',
+    },
+    {
+        id: 3,
+        name: 'My Dashboard',
+    },
+    {
+        id: 4,
+        name: 'My Profile',
+    },
+    {
+        id: 5,
+        name: 'Resume Builder',
+    },
 ];
