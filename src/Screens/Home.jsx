@@ -1,9 +1,9 @@
 import BrowseByCategory from "../components/BrowseByCategory"
 import FeaturedJobs from "../components/FeaturedJobs"
-import Header from "../components/Header"
 import Hero from "../components/Hero"
 import PremiumFeatures from "../components/PremiumFeatures"
 import TopCompaniesHiring from "../components/TopCompaniesHiring"
+import CallToAction from "../components/CallToAction"
 
 const Home = () => {
     return (
@@ -13,11 +13,13 @@ const Home = () => {
             {/*Premium Features Section */}
             <PremiumFeatures />
             {/* Featured Jobs Section*/}
-            <FeaturedJobs/>
+            <FeaturedJobs />
             {/*Companies Hirings Section */}
-            <TopCompaniesHiring/>
+            <TopCompaniesHiring />
             {/* Browse By Category Section*/}
-            <BrowseByCategory/>
+            <BrowseByCategory />
+            {/*CTA Section */}
+            <CallToAction />
         </>
     )
 }

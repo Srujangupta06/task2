@@ -1,6 +1,8 @@
-const Headline = ({headline}) => {
+const Headline = ({ headline, color }) => {
     return (
-        <p className="text-md text-gray-600 text-center">{headline}</p>
+        <p
+            style={{ color: color !== undefined ? color:'#000'}}
+            className="text-md text-gray-600 text-center">{headline}</p>
     )
 }
 
