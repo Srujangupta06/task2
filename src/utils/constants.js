@@ -160,52 +160,99 @@ export const topCompaniesHirings = [
 
 
 export const CategoryList = [
+    {
+        id: 1,
+        iconName: 'code',
+        name: 'Technology',
+        noOfJobs: '15,234 jobs',
+    },
+    {
+        id: 2,
+        iconName: 'medical',
+        name: 'Healthcare',
+        noOfJobs: '8,567 jobs',
+    },
+    {
+        id: 3,
+        iconName: 'finance',
+        name: 'Finance',
+        noOfJobs: '6,890 jobs',
+    },
+    {
+        id: 4,
+        iconName: 'marketing',
+        name: 'Marketing',
+        noOfJobs: '4,321 jobs',
+    },
+    {
+        id: 5,
+        iconName: 'design',
+        name: 'Design',
+        noOfJobs: '3,456 jobs',
+    },
+    {
+        id: 6,
+        iconName: 'sales',
+        name: 'Sales',
+        noOfJobs: '7,890 jobs',
+    },
+    {
+        id: 7,
+        iconName: 'engineering',
+        name: 'Engineering',
+        noOfJobs: '9,123 jobs',
+    },
+    {
+        id: 8,
+        iconName: 'education',
+        name: 'Education',
+        noOfJobs: '2,345 jobs',
+    },
+];
+
+
+export const footerEmployerLinks = [
   {
     id: 1,
-    iconName: 'code',
-    name: 'Technology',
-    noOfJobs: '15,234 jobs',
+    name: 'Post a Job',
   },
   {
     id: 2,
-    iconName: 'medical',
-    name: 'Healthcare',
-    noOfJobs: '8,567 jobs',
+    name: 'Browse Candidates',
   },
   {
     id: 3,
-    iconName: 'finance',
-    name: 'Finance',
-    noOfJobs: '6,890 jobs',
+    name: 'Pricing Plans',
   },
   {
     id: 4,
-    iconName: 'marketing',
-    name: 'Marketing',
-    noOfJobs: '4,321 jobs',
+    name: 'Employer Dashboard',
   },
   {
     id: 5,
-    iconName: 'design',
-    name: 'Design',
-    noOfJobs: '3,456 jobs',
+    name: 'Support',
+  },
+];
+
+export const footerJobSeerkerLinks = [
+  {
+    id: 1,
+    name: 'Browse Jobs',
   },
   {
-    id: 6,
-    iconName: 'sales',
-    name: 'Sales',
-    noOfJobs: '7,890 jobs',
+    id: 2,
+    name: 'Browse Companies',
   },
   {
-    id: 7,
-    iconName: 'engineering',
-    name: 'Engineering',
-    noOfJobs: '9,123 jobs',
+    id: 3,
+    name: 'My Dashboard',
   },
   {
-    id: 8,
-    iconName: 'education',
-    name: 'Education',
-    noOfJobs: '2,345 jobs',
+    id: 4,
+    name: 'My Profile',
+  },
+  {
+    id: 5,
+    name: 'Resume Builder',
   },
 ];

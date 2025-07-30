@@ -14,7 +14,7 @@ import { LuBook } from "react-icons/lu";
 const CategoryItem = ({ categoryInfo }) => {
     const { noOfJobs, name, iconName } = categoryInfo
     return (
-        <li className="w-full sm:w-[48%] md:w-[50%] lg:w-[20%] flex flex-col items-center justify-center p-4 gap-y-4 my-4 bg-white border-[0.5px] border-[#edc6ab] rounded-lg min-h-[200px] hover:shadow-md hover:cursor-pointer transition-shadow">
+        <li className="w-full sm:w-[50%] md:w-[30%] lg:w-[20%] flex flex-col items-center justify-center flex-wrap p-4 gap-y-4 my-4 bg-white border-[0.5px] border-[#edc6ab] rounded-lg min-h-[200px] hover:shadow-md hover:cursor-pointer transition-shadow">
             <div className="bg-[#ffedd4] p-2 rounded-md">
                 {iconName === 'technology' ? <IoCodeOutline className="text-[#e87f3a] text-2xl"/> :
                     iconName === 'medical' ? <FaBriefcaseMedical className="text-[#e87f3a] text-2xl"/> :
