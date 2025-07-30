@@ -14,17 +14,17 @@ const Footer = () => {
                 {/*Right Section */}
                 <div className="flex flex-col md:flex-row justify-around  w-full md:w-[50%]">
                     {/*For JobSeekers */}
-                    <ul className="flex flex-col gap-y-2 my-6">
+                    <ul className="flex flex-col gap-y-2 my-6 md:my-0">
                         <h5 className="font-semibold text-white text-lg">For JobSeekers</h5>
                         {footerJobSeerkerLinks.map((eachLink) => (
-                            <li className="text-white/70 cursor-pointer">{eachLink.name}</li>
+                            <li className="text-white/70 cursor-pointer" key={eachLink.id}>{eachLink.name}</li>
                         ))}
                     </ul>
                     {/*For Employers */}
                     <ul className="flex flex-col gap-y-2">
                         <h5 className="font-semibold text-white text-lg">For Employers</h5>
                         {footerEmployerLinks.map((eachLink) => (
-                            <li className="text-white/70 cursor-pointer">{eachLink.name}</li>
+                            <li className="text-white/70 cursor-pointer" key={eachLink.id}>{eachLink.name}</li>
                         ))}
                     </ul>
                 </div>

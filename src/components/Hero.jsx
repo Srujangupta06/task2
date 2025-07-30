@@ -10,9 +10,7 @@ const Hero = () => {
     const jobsInput = useRef(null);
     const locationInput = useRef(null);
 
-    const onHandleClickSearchItem = (searchItem)=>{
-
-    }
+    
 
     return (
         <div className="relative md:min-h-[500px] bg-cover bg-center flex flex-col items-center justify-center p-8"
@@ -25,19 +23,19 @@ const Hero = () => {
                 <p className=" text-white text-lg md:text-xl mt-4 w-[80%] text-center">Connect with top companies and discover opportunities that match your skills and aspirations</p>
                 <div className="bg-white w-full md:w-[90%] my-6 rounded-md p-6" >
                     <div className="md:flex md:items-center gap-x-4 mb-2">
-                        <div className="mb-3 border border-gray-500 w-full md:w-[38%] py-1.5 px-2 rounded-sm flex items-center gap-x-2">
+                        <div className="mb-3 border border-gray-500 w-full md:w-[38%] py-1.5 px-2 rounded-sm flex items-center gap-x-2 focus-within:border-orange-500">
                             <CiSearch className="text-gray-600" />
-                            <input type="text" ref={jobsInput}  placeholder="Search for jobs, keywords, companies" className="text-sm h-8 text-black border-none outline-none grow" />
+                            <input type="text"   placeholder="Search for jobs, keywords, companies" className="text-sm h-8 text-black border-none outline-none grow" />
                         </div>
-                        <div className="mb-3 border border-gray-500 w-full md:w-[38%] py-1.5 px-2 rounded-sm flex items-center gap-x-2">
+                        <div className="mb-3 border border-gray-500 w-full md:w-[38%] py-1.5 px-2 rounded-sm flex items-center gap-x-2 focus-within:border-orange-500">
                             <CiLocationOn className="text-gray-600" />
-                            <input type="text" ref={locationInput}  placeholder="City, state or remote" className="text-sm h-8 text-black border-none outline-none grow" />
+                            <input type="text"  placeholder="City, state or remote" className="text-sm h-8 text-black border-none outline-none grow" />
                         </div>
                         <Button buttonText="Search Jobs" width='100%' />
                     </div>
                     <p className="text-[14px]">Popular Searches: {
                         popularSearches.map((eachSearch) => (
-                            <span key={eachSearch.id} className="mr-1.5 hover:cursor-pointer text-[#ea590c]" onClick={onHandleClickSearchItem}>{eachSearch.search} </span>
+                            <span key={eachSearch.id} className="mr-1.5 hover:cursor-pointer text-[#ea590c]">{eachSearch.search} </span>
                         ))
                     }</p>
                 </div>
