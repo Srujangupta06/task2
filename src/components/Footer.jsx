@@ -1,12 +1,14 @@
+import { useNavigate } from "react-router-dom"
 import { APP_LOGO, footerEmployerLinks, footerJobSeerkerLinks } from "../utils/constants"
 
 const Footer = () => {
+    const navigate=  useNavigate()
     return (
         <footer className="bg-[#121828] min-h-[350px] px-[5%] md:px-[15%] py-8">
             <div className="flex flex-col md:flex-row items-start justify-between">
                 {/*Left Section */}
                 <div className="w-full md:w-[50%]">
-                    <img src={APP_LOGO} alt="logo" className="h-12 mb-4" />
+                    <img src={APP_LOGO} alt="logo" className="h-12 mb-4 cursor-pointer" onClick={()=>navigate('/')}/>
                     <p className="text-white text-md mb-4 leading-relaxed w-full md:w-[70%]">The leading job portal connecting talented professionals with top companies across the United States. Find your dream job or hire the perfect candidate today.</p>
                 </div>
                 {/*Right Section */}

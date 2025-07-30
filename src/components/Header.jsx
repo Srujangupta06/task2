@@ -20,7 +20,7 @@ const Header = () => {
       <ul className="md:flex md:items-center md:gap-x-8 hidden">
         {navMenuList.map((eachItem) => (
           <Link key={eachItem.id} className="text-black" to={eachItem.route}>
-            <li  className="hover:text-amber-500 cursor-pointer text-sm whitespace-nowrap">
+            <li  className="hover:text-amber-500 cursor-pointer text-md whitespace-nowrap">
               {eachItem.menu}
             </li>
           </Link>
