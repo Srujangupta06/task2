@@ -261,3 +261,23 @@ export const footerJobSeerkerLinks = [
         name: 'Resume Builder',
     },
 ];
+
+
+export const socialMediaIcons = [
+    {
+        id: 1,
+        iconName: 'facebook'
+    },
+    {
+        id: 2,
+        iconName: 'twitter'
+    },
+    {
+        id: 3,
+        iconName: 'linkedin'
+    },
+    {
+        id: 4,
+        iconName: 'instagram'
+    }
+]
